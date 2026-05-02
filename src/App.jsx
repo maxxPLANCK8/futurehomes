@@ -125,7 +125,7 @@ const seedData = {
     },
     {
       id: 'listing-4',
-      name: 'Near Safari Park Hotel Ã¢â‚¬â€ 3BR Apartments',
+      name: 'Near Safari Park Hotel - 3BR Apartments',
       price: 9000000,
       priceLabel: 'KES 9M',
       address: 'Near Safari Park Hotel, Nairobi',
@@ -143,7 +143,7 @@ const seedData = {
     },
     {
       id: 'listing-5',
-      name: 'Dennis Pritt Road Ã¢â‚¬â€ Lavington',
+      name: 'Dennis Pritt Road, Lavington',
       price: 10000000,
       priceLabel: 'KES 10M',
       address: 'Dennis Pritt Road, Lavington',
@@ -161,7 +161,7 @@ const seedData = {
     },
     {
       id: 'listing-6',
-      name: 'Limuru Ã¢â‚¬â€ Stunning 3 & 4 Bedrooms off Waiyaki Way',
+      name: 'Limuru - Stunning 3 & 4 Bedrooms off Waiyaki Way',
       price: 28000000,
       priceLabel: 'KES 28M',
       address: 'Limuru, off Waiyaki Way',
@@ -217,7 +217,7 @@ const seedData = {
     },
     {
       id: 'listing-9',
-      name: 'Mombasa Road Ã¢â‚¬â€ Behind Gateway Mall',
+      name: 'Mombasa Road - Behind Gateway Mall',
       price: 8000000,
       priceLabel: 'KES 8M',
       address: 'Mombasa Road, Behind Gateway Mall',
@@ -1030,7 +1030,7 @@ function HomePage() {
         <div className="cta-band-overlay" />
         <div className="container cta-band-content cta-banner-content">
           <p className="cta-label">YOU ARE NOT STUCK</p>
-          <h2 className="cta-heading">Every property â€” Share what you&apos;re looking for</h2>
+          <h2 className="cta-heading">Every property - Share what you&apos;re looking for</h2>
           <button type="button" className="cta-btn" onClick={actions.openBooking}>
             Book a Call
           </button>
@@ -2261,7 +2261,7 @@ function MessagesPanel({ messages, bookings }) {
                   <td>{message.name}</td>
                   <td>{message.email}</td>
                   <td>{message.service}</td>
-                  <td className="long-cell">{message.message || 'Ã¢â‚¬â€'}</td>
+                  <td className="long-cell">{message.message || '-'}</td>
                   <td>{formatCompactDate(message.receivedAt)}</td>
                 </tr>
               ))}
@@ -2294,7 +2294,7 @@ function MessagesPanel({ messages, bookings }) {
                   <td>{booking.name}</td>
                   <td>{booking.phone}</td>
                   <td>{booking.preferredDate}</td>
-                  <td className="long-cell">{booking.notes || 'Ã¢â‚¬â€'}</td>
+                  <td className="long-cell">{booking.notes || '-'}</td>
                   <td>{formatCompactDate(booking.receivedAt)}</td>
                 </tr>
               ))}
